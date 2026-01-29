@@ -1,5 +1,6 @@
 import { API_URL, RES_PER_PAGE } from './config.js';
 import { getJSON } from './helpers.js';
+import { Fraction } from 'fractional'; // Librería para mostrar fracciones (ej. 1/2) 
 
 export const state = {
   recipe: {},
