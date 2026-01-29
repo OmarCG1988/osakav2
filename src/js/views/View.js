@@ -1,11 +1,9 @@
-import { Fraction } from 'fractional';
 import icons from 'url:../../img/icons.svg';
 
 export default class View {
   _data;
 
   render(data) {
-    // Validamos si hay datos o si el arreglo está vacío (Paso 5.i.iii del Avance 3)
     if (!data || (Array.isArray(data) && data.length === 0)) return this.renderError();
 
     this._data = data;
